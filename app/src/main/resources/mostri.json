@@ -1,0 +1,20 @@
+[
+  {
+    "nome": "Goblin Cattivo",
+    "puntiVitaMassimi": 30,
+    "attacco": 5,
+    "ricompensaEsperienza": 50
+  },
+  {
+    "nome": "Orco Furioso",
+    "puntiVitaMassimi": 80,
+    "attacco": 12,
+    "ricompensaEsperienza": 150
+  },
+  {
+    "nome": "Drago di Fuoco",
+    "puntiVitaMassimi": 200,
+    "attacco": 25,
+    "ricompensaEsperienza": 500
+  }
+]

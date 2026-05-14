@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogo>
+    <armi>
+        <arma>
+            <nome>Spada di Legno</nome>
+            <descrizione>Una semplice spada da allenamento.</descrizione>
+            <bonusAttacco>5</bonusAttacco>
+        </arma>
+        <arma>
+            <nome>Ascia da Battaglia</nome>
+            <descrizione>Un'ascia pesante e letale.</descrizione>
+            <bonusAttacco>15</bonusAttacco>
+        </arma>
+    </armi>
+
+    <pozioni>
+        <pozione>
+            <nome>Pozione Piccola</nome>
+            <descrizione>Cura le ferite lievi.</descrizione>
+            <puntiCura>20</puntiCura>
+        </pozione>
+        <pozione>
+            <nome>Elisir della Vita</nome>
+            <descrizione>Ripristina molta salute.</descrizione>
+            <puntiCura>100</puntiCura>
+        </pozione>
+    </pozioni>
+</catalogo>
