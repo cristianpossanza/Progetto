@@ -70,16 +70,15 @@ public class OggettiRepository {
         }
     }
 
-    /**
-     * Usa gli STREAM (spiegati a lezione) per filtrare l'HashSet e trovare l'oggetto!
-     */
+
+
     public Oggetto getOggetto(String nome) {
         return this.catalogoOggetti.stream()
-                // Filtra: tieni solo l'oggetto il cui nome è uguale a quello cercato (ignorando maiuscole/minuscole)
+                //Filtro l'oggetto il cui nome è uguale a quello cercato
                 .filter(oggetto -> oggetto.getNome().equalsIgnoreCase(nome))
-                // Prendi il primo che trovi
+                //Prendi il primo che trovi
                 .findFirst()
-                // Se non trovi nulla, restituisci null
+                //Se non trovo nulla, restituisco null
                 .orElse(null);
     }
 
