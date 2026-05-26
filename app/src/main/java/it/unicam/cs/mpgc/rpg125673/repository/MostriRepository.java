@@ -51,11 +51,11 @@ public class MostriRepository {
      */
     public Mostro getMostro (String nome){
         // Cerchiamo direttamente la chiave nella mappa (tutto in minuscolo)
-        Mostro m = this.mappaMostri.get(nome.toLowerCase());
+        Mostro mostro = this.mappaMostri.get(nome.toLowerCase());
 
-            if (m != null) {
+            if (mostro != null) {
                  // Restituiamo una nuova copia per il combattimento
-                return new Mostro(m.getNome(), m.getPuntiVitaMassimi(), m.getAttacco(), m.getRicompensaEsperienza());
+                return new Mostro(mostro.getNome(), mostro.getPuntiVitaMassimi(), mostro.getAttacco(), mostro.getRicompensaEsperienza());
                 }
 
             return null; // Se il mostro non esiste nella mappa

@@ -8,7 +8,7 @@ public abstract class PersonaggioBase implements Personaggio {
     private int puntiVitaMassimi;
     private int attacco;
 
-    //ECCO IL COSTRUTTORE VUOTO RICHIESTO DAL TUTOR (Fondamentale per JPA/Hibernate)
+    //COSTRUTTORE VUOTO (Fondamentale per JPA/Hibernate)
     public PersonaggioBase() {
     }
 
