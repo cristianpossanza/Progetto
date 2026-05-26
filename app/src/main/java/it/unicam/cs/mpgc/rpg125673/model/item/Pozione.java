@@ -6,8 +6,14 @@ public class Pozione implements Oggetto{
     private final int puntiCura;
 
     public Pozione(String nome, String descrizione, int puntiCura) {
+        if (nome == null || nome.trim().isEmpty()) {
+            throw new IllegalArgumentException("Il nome della pozione non può essere vuoto.");
+        }
+        if (puntiCura <= 0) {
+            throw new IllegalArgumentException("I punti cura devono essere maggiori di zero.");
+        }
         this.nome = nome;
-        this.descrizione = descrizione;
+        this.descrizione = descrizione != null ? descrizione : "Nessuna descrizione";
         this.puntiCura = puntiCura;
     }
 

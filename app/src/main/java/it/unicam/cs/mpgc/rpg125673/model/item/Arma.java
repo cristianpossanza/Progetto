@@ -6,8 +6,14 @@ public class Arma implements Oggetto{
     private final int bonusAttacco;
 
     public Arma(String nome, String descrizione, int bonusAttacco) {
+        if (nome == null || nome.trim().isEmpty()) {
+            throw new IllegalArgumentException("Il nome dell'arma non può essere vuoto.");
+        }
+        if (bonusAttacco < 0) {
+            throw new IllegalArgumentException("Il bonus di attacco non può essere negativo.");
+        }
         this.nome = nome;
-        this.descrizione = descrizione;
+        this.descrizione = descrizione != null ? descrizione : "Nessuna descrizione";
         this.bonusAttacco = bonusAttacco;
     }
 
